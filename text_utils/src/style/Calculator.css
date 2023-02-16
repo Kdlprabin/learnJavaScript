@@ -1,0 +1,57 @@
+.Board{
+    background-color: rgb(26, 5, 110);
+    height: 80vh;
+    width: 80vw;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.c-buttons{
+    height: 90%;
+}
+.input{
+    width: 95%;
+    height: 10%;
+    background-color: #28243e;
+    font-size: 32px;
+    color: #f2f2f2;
+    border: 2px solid rgba(1, 2, 37, 0.733);
+    align-self: center;
+    justify-self: center;
+    line-height: 15px;
+    padding:0px 5px;
+}
+.prev{
+    font-size: 8px;
+    text-align: left;
+}
+.inputValue{
+    text-align: right;
+}
+.row{
+    display: flex;
+    margin: 10px;
+    height: 20%;
+}
+
+.c-button{
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    font-size: 24px;
+    color: #f2f2f2;
+    background-color: rgb(92, 76, 186);
+    border: 4px solid rgba(1, 2, 37, 0.733);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.c-button:active{
+    color: rgb(52,52,52);
+    background-color: #f2f2f2;
+}
