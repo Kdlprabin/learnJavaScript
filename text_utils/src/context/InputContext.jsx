@@ -45,7 +45,7 @@ export const InputState = (props) => {
         setInput("")
     }
     return (
-        <InputContext.Provider value={{state: {input,operation,prev}, update:{addInput,clear,performOperation,setOperationType}}}>
+        <InputContext.Provider value={{state:{input,operation,prev}, update:{addInput,clear,performOperation,setOperationType}}}>
             {props.children}
         </InputContext.Provider>
     );

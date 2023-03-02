@@ -1,17 +1,16 @@
 import React from 'react'
 import '../style/Calculator.css'
 import CustomButton from '../components/CustomButton'
-import {useContext, lazy,Suspense} from 'react'
+import {useContext} from 'react'
+import { InputContext } from '../context/InputContext'
 function Calculator() {
-  const data = useContext(lazy(()=>import('../context/InputContext').then(module=>{return{default:module.InputContext}})))
+  const a = useContext(InputContext);
   return (
     <div className='Board'>
       <div className="input">
-        <Suspense>
-          <div className='prev'>{data.state.prev}</div>
-          <div className="opertion">{data.state.operation}</div>
-          <div className="inputValue">{data.state.input}</div>
-        </Suspense>
+          <div className='prev'>{a.state.prev}</div>
+          <div className="opertion">{a.state.operation}</div>
+          <div className="inputValue">{a.state.input}</div>
       </div>
       <div className="c-buttons">
         <div className="row">

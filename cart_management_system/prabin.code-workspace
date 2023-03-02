@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "prabin",
+			"path": "\\\\wsl.localhost\\Ubuntu\\home\\prabin"
+		},
+		{
+			"name": "tutorial",
+			"path": "../../cloud/tutorial"
+		}
+	],
+	"settings": {}
+}
