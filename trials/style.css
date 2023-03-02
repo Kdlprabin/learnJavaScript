@@ -21,8 +21,8 @@ body{
     animation: motion 5s ease-in-out infinite;
 }
 :root{
-    --upper-range: -200px;
-    --lower-range: 200px;
+    --upper-range: -400px;
+    --lower-range: 400px;
 }
 @keyframes motion{
     0%,100%{
@@ -97,15 +97,18 @@ body{
     color: white;
     background: linear-gradient(-90deg, #0fb4ff, #ff4484);
     padding: 10px;
+    position:absolute;
+    top: 10px;
     border-radius: 20px;
     font-size: 24px;
     width: 200px;
     height: 50px;
     text-align: center;
     font-weight: bold;
-    position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
+
 .button > span{
     position: absolute;
     background-color: rgb(255, 255, 255);
@@ -141,4 +144,4 @@ body{
     left: 0;
     pointer-events: none;
     z-index: 99999999; /* so that it stays on top of all other elements */
-  }
+} 
